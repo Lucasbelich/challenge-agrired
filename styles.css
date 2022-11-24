@@ -167,7 +167,7 @@ html, body {
 }
 
 .contact__form > button {
-    background: linear-gradient(90deg, rgba(134,199,71,1) 0%, rgba(0,179,0,1) 100%);
+    background: linear-gradient(90deg, rgba(134,199,71,1) 0%, rgba(0,179,0,1) 80%);
     border-radius: 20px;
     border: none;
     color: white;
@@ -241,4 +241,15 @@ html, body {
 
 .footer__text {
     color: black
+}
+
+
+@media  (min-width: 600px) {
+    .panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        gap: 50px
+    }
 }
