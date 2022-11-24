@@ -1,0 +1,244 @@
+html, body {
+    margin: 0
+}
+
+.bg-hero {
+    background-image: url(./assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+}
+
+.landing {
+    height: 100vh
+}
+
+
+.hero__bg {
+    width: 100%;
+    z-index: 2;    
+}
+
+.nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.nav__logo{
+    height:30px;
+
+}
+.nav__menu {    
+    height: 30px;
+    width: 30px;
+}
+
+.hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero > h1, h3 {
+    color: white
+}
+
+.hero > h1 {
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+
+.hero__buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero__firstButton{
+    background-color: #20110e;
+    border-radius: 13px; 
+    border: none;
+    color: white;
+    padding: 10px 40px;  
+}
+.hero__secondButton{
+    background-color: transparent;
+    border-radius: 13px; 
+    border: 1px solid white;
+    color: white;
+    padding: 10px 40px;        
+}
+
+.hero__firstButton:hover{
+    background-color: #20110ea8;
+    cursor: pointer;
+}
+.hero__secondButton:hover {
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;    
+}
+
+.slider__container{
+    background-image: url(./assets/img/landing_slidercontainer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 350px;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 500px;    
+}
+
+.slider__mask {
+    padding-left: 30px;
+    width: 350px
+}
+
+.slider__mask ul {
+    animation: change 20s infinite;
+    display: flex;
+    gap:100px;
+    width: 100%;
+}
+
+.slider__mask li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider__mask img {
+    border-radius: 5px;
+    height: 100%;
+    margin-top: 5px;
+    width: 350px;
+}
+
+@keyframes change {
+    0%{margin-left: 0;}
+    33%{margin-left: 0;}
+    34%{margin-left: -128%;}
+    66%{margin-left: -128%;}
+    67%{margin-left: -256%;}
+    100%{margin-left: -256%;}
+}
+
+
+.hero__text {
+    color: black;
+    text-align: center;
+}   
+    
+.contact{    
+    align-items: center;
+    background-color: #d1e9c8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100px;
+    justify-content: center;
+    margin: 200px auto;
+    padding: 10px; 
+    width: 500px;
+}
+
+.contact > h4 {
+    margin: 0
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact__form > input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.contact__form > input::placeholder {
+    padding-left: 5px;
+}
+
+.contact__form > button {
+    background: linear-gradient(90deg, rgba(134,199,71,1) 0%, rgba(0,179,0,1) 100%);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about > img {
+    cursor: pointer;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    width: 10px;
+}
+
+.about__text {
+    line-height: 0.5;
+    margin-top: 50px;
+}
+
+.bg-footer {
+    background-image: url(./assets/img/curvafooter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.panel__imgDemand, .panel__imgOffer{
+    width: 50%;
+}
+
+.panel__textDemand, .panel__textOffer{
+    color: white
+}
+
+.footer__division{
+    border-top: 1px solid white;
+    margin: 100px 20%;
+}
+
+.footer{    
+    align-items: flex-end;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 100px;    
+}
+
+.footer__left {
+    border-top: 1px solid white
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer__text {
+    color: black
+}
