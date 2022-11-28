@@ -146,7 +146,7 @@ html, body {
 }
     
 .contact{      
-    margin: 20%;
+    margin: 15% 20%;
 }
 
 .contact__flex{
@@ -210,7 +210,8 @@ html, body {
 }
 
 .panel__textDemand, .panel__textOffer{
-    color: white
+    color: white;
+    line-height: 0.5
 }
 
 .footer__division{
@@ -228,7 +229,8 @@ html, body {
 }
 
 .footer__left {
-    border-top: 1px solid white
+    border-top: 1px solid white;
+    line-height: 0.5;
 }
 
 .footer__right {
@@ -242,7 +244,7 @@ html, body {
 }
 @media screen and (min-width: 1050px) {
     .contact{      
-        margin: 20% 30%;
+        margin: 15% 30%;
     }
 }
 
@@ -260,6 +262,10 @@ html, body {
         font-size: 1.3vw
     }
     
+    .contact__flex > h4 {
+        font-size: 1.3vw
+    }
+    
     .panel{
         font-size: 1.3vw;
     }
@@ -270,6 +276,14 @@ html, body {
 }
 
 @media screen and (min-width: 511px) and ( max-width: 768px) {
+    .hero > h1 {
+        font-size: 3vw;
+    }
+
+    .hero > h3{
+        font-size: 2vw;
+    }
+    
     .about__text {
         font-size: 2vw
     }
@@ -277,6 +291,10 @@ html, body {
     .contact__flex{
         gap: 10px;
         padding: 16px;
+    }
+
+    .contact__flex > h4 {
+        font-size: 2vw
     }
 
     .contact__form {
@@ -308,6 +326,14 @@ html, body {
 
     .bg-hero {
         background-size: 100% 80%;
+    }
+
+    .hero > h1 {
+        font-size: 3vw;
+    }
+
+    .hero > h3{
+        font-size: 2vw;
     }
 
     .hero__buttons{
@@ -345,6 +371,10 @@ html, body {
     .contact__flex{        
         gap: 10px;
         padding: 16px
+    }
+
+    .contact__flex > h4 {
+        font-size: 2vw
     }
 
     .contact__form {
