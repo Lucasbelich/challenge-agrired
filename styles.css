@@ -12,12 +12,6 @@ html, body {
     height: 100vh
 }
 
-
-.hero__bg {
-    width: 100%;
-    z-index: 2;    
-}
-
 .nav{
     align-items: center;
     display: flex;
@@ -47,10 +41,14 @@ html, body {
 }
 
 .hero > h1 {
+    font-size: 3vw;
     margin-bottom: 0px;
     margin-top: 50px;
 }
 
+.hero > h3{
+    font-size: 2vw;
+}
 
 .hero__buttons{
     display: flex;
@@ -126,55 +124,6 @@ html, body {
     100%{margin-left: -256%;}
 }
 
-
-.hero__text {
-    color: black;
-    text-align: center;
-}   
-    
-.contact{    
-    align-items: center;
-    background-color: #d1e9c8;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 100px;
-    justify-content: center;
-    margin: 200px auto;
-    padding: 10px; 
-    width: 500px;
-}
-
-.contact > h4 {
-    margin: 0
-}
-
-.contact__form {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.contact__form > input {
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-}
-
-.contact__form > input::placeholder {
-    padding-left: 5px;
-}
-
-.contact__form > button {
-    background: linear-gradient(90deg, rgba(134,199,71,1) 0%, rgba(0,179,0,1) 80%);
-    border-radius: 20px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-}
-
 .about{
     display: flex;
     flex-direction: column;
@@ -191,8 +140,55 @@ html, body {
 }
 
 .about__text {
+    font-size: 1.3vw;
     line-height: 0.5;
     margin-top: 50px;
+}
+    
+.contact{  
+    margin: 20%;
+}
+
+.contact__flex{
+    align-items: center;
+    background-color: #d1e9c8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100px;
+    justify-content: center;
+    padding: 10px;     
+}
+
+.contact__flex > h4 {
+    font-size: 2vw;
+    margin: 0
+}
+
+.contact__form {    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact__form > input {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.contact__form > input::placeholder {
+    padding-left: 5px;
+}
+
+.contact__form > button {    
+    background: linear-gradient(90deg, rgba(134,199,71,1) 0%, rgba(0,179,0,1) 80%);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
 }
 
 .bg-footer {
@@ -202,6 +198,7 @@ html, body {
     
 }
 .panel{
+    font-size: 1.3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -221,7 +218,8 @@ html, body {
     margin: 100px 20%;
 }
 
-.footer{    
+.footer{   
+    font-size: 1.3vw;
     align-items: flex-end;    
     display: flex;
     flex-direction: row;
@@ -244,12 +242,104 @@ html, body {
 }
 
 
-@media  (min-width: 600px) {
+@media screen and (min-width: 511px) and ( max-width: 768px) {
+    .about__text {
+        font-size: 2vw
+    }
+
+    .contact__flex{
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+    }
+
     .panel{
         display: flex;
         flex-direction: column;
+        font-size: 2vw;
+        gap: 50px;
         justify-content: space-around;
         text-align: center;
-        gap: 50px
+    }
+
+    .footer{   
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 2vw;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width: 320px) and ( max-width: 510px) {
+
+    .bg-hero {
+        background-size: 100% 80%;
+    }
+
+    .hero__buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slider__container{
+        width: 320px;    
+    }
+    
+    .slider__mask {
+        padding-left: 4px;
+    }
+    
+    
+    .slider__mask img {
+        margin-top: -1px;        
+        width: 230px;
+    }
+    
+    @keyframes change {
+        0%{margin-left: 0;}
+        33%{margin-left: 0;}
+        34%{margin-left: -94%;}
+        66%{margin-left: -94%;}
+        67%{margin-left: -189%;}
+        100%{margin-left: -189%;}
+    }
+
+    .about__text {
+        font-size: 3vw
+    }
+
+    .contact__flex{        
+        gap: 10px;
+        padding: 16px
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;        
+        gap: 8px;
+    }
+
+    .panel{
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        gap: 50px;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer{   
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 3vw;
+        gap: 30px;
     }
 }
